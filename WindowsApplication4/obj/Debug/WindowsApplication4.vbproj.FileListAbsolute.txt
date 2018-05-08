@@ -1,0 +1,2 @@
+c:\users\user\documents\visual studio 2013\Projects\WindowsApplication4\WindowsApplication4\bin\Debug\WindowsApplication4.exe.config
+C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\WindowsApplication4.exe.config

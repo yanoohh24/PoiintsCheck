@@ -28,9 +28,8 @@ Module Module1
     Public frmSMS as new Form1()
 
     sub main()
-        Database = ""
-        host = ""
-        Username = ""
+        host = "127.0.0.1"
+        Username = "root"
         Password = ""
         'frmSMS.Show()
         'connStrSMS = "Database=Messages;Data Source=" & Host & ";User Id=" & UserName & ";Password=" & Password & ";UseCompression=True;Connection Timeout=28800"

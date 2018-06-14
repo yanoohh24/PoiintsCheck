@@ -1,26 +1,10 @@
-C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\WindowsApplication4.exe.config
-C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\WindowsApplication4.exe.manifest
-C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\WindowsApplication4.application
-C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\WindowsApplication4.exe
-C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\WindowsApplication4.pdb
-C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\WindowsApplication4.xml
 C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\Con_lib.dll
 C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\MaterialSkin.dll
-C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\Microsoft.Data.Services.Client.dll
-C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\Microsoft.Data.Services.dll
 C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\Microsoft.Expression.Drawing.dll
 C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\SharpZipLib.dll
 C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\ZipForge.dll
-C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\Microsoft.Data.OData.dll
-C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\Microsoft.Data.Edm.dll
-C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\System.Spatial.dll
 C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\Microsoft.SqlServer.DTSRuntimeWrap.dll
-C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\Microsoft.Data.Services.xml
-C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\Microsoft.Data.Services.Client.xml
 C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\ZipForge.xml
-C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\Microsoft.Data.OData.xml
-C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\Microsoft.Data.Edm.xml
-C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\System.Spatial.xml
 C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\de\Microsoft.Expression.Drawing.resources.dll
 C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\es\Microsoft.Expression.Drawing.resources.dll
 C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\fr\Microsoft.Expression.Drawing.resources.dll
@@ -31,11 +15,49 @@ C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4
 C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\zh-Hans\Microsoft.Expression.Drawing.resources.dll
 C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\zh-Hant\Microsoft.Expression.Drawing.resources.dll
 C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\obj\Debug\Template.vbprojResolveAssemblyReference.cache
-C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\obj\Debug\WindowsApplication4.Form1.resources
-C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\obj\Debug\WindowsApplication4.Resources.resources
 C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\obj\Debug\Template.vbproj.GenerateResource.Cache
-C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\obj\Debug\WindowsApplication4.exe.manifest
-C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\obj\Debug\WindowsApplication4.application
-C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\obj\Debug\WindowsApplication4.exe
-C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\obj\Debug\WindowsApplication4.xml
-C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\obj\Debug\WindowsApplication4.pdb
+C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\SMS Message.exe.config
+C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\SMS Message.exe.manifest
+C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\SMS Message.application
+C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\SMS Message.exe
+C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\SMS Message.pdb
+C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\bin\Debug\SMS Message.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\obj\Debug\SMS Message.exe.manifest
+C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\obj\Debug\SMS Message.application
+C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\obj\Debug\SMS Message.exe
+C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\obj\Debug\SMS Message.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\obj\Debug\SMS Message.pdb
+C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\obj\Debug\SMS_Message.Form1.resources
+C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\obj\Debug\SMS_Message.Resources.resources
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\SMS Message.exe.config
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\obj\Debug\SMS Message.exe
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\obj\Debug\SMS Message.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\obj\Debug\SMS Message.pdb
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\SMS Message.exe.manifest
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\SMS Message.application
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\SMS Message.exe
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\SMS Message.pdb
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\SMS Message.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\Con_lib.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\MaterialSkin.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\Microsoft.Expression.Drawing.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\SharpZipLib.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\ZipForge.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\Microsoft.SqlServer.DTSRuntimeWrap.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\ZipForge.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\de\Microsoft.Expression.Drawing.resources.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\es\Microsoft.Expression.Drawing.resources.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\fr\Microsoft.Expression.Drawing.resources.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\it\Microsoft.Expression.Drawing.resources.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\ja\Microsoft.Expression.Drawing.resources.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\ko\Microsoft.Expression.Drawing.resources.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\ru\Microsoft.Expression.Drawing.resources.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\zh-Hans\Microsoft.Expression.Drawing.resources.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\zh-Hant\Microsoft.Expression.Drawing.resources.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\obj\Debug\Template.vbprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\obj\Debug\SMS_Message.Form1.resources
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\obj\Debug\SMS_Message.Form2.resources
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\obj\Debug\SMS_Message.Resources.resources
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\obj\Debug\Template.vbproj.GenerateResource.Cache
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\obj\Debug\SMS Message.exe.manifest
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\obj\Debug\SMS Message.application

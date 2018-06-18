@@ -35,6 +35,16 @@ Partial Class Form2
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtAccountno = New System.Windows.Forms.TextBox()
         Me.ProgBar = New System.Windows.Forms.ProgressBar()
+        Me.txtMemberDate = New System.Windows.Forms.TextBox()
+        Me.cmdTop100 = New System.Windows.Forms.Button()
+        Me.cmdTop1000 = New System.Windows.Forms.Button()
+        Me.cmdTop10000 = New System.Windows.Forms.Button()
+        Me.txtTop = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.cmdNegDB = New System.Windows.Forms.Button()
+        Me.cmdNegPOS = New System.Windows.Forms.Button()
+        Me.ListView1 = New System.Windows.Forms.ListView()
         CType(Me.DataGridView1,System.ComponentModel.ISupportInitialize).BeginInit
         Me.SuspendLayout
         '
@@ -115,11 +125,12 @@ Partial Class Form2
         '
         'txtAccountno
         '
-        Me.txtAccountno.Location = New System.Drawing.Point(57, 49)
+        Me.txtAccountno.Location = New System.Drawing.Point(642, 91)
         Me.txtAccountno.MaxLength = 32999999
         Me.txtAccountno.Name = "txtAccountno"
         Me.txtAccountno.Size = New System.Drawing.Size(100, 20)
         Me.txtAccountno.TabIndex = 8
+        Me.txtAccountno.Visible = false
         '
         'ProgBar
         '
@@ -128,11 +139,112 @@ Partial Class Form2
         Me.ProgBar.Size = New System.Drawing.Size(836, 10)
         Me.ProgBar.TabIndex = 9
         '
+        'txtMemberDate
+        '
+        Me.txtMemberDate.Location = New System.Drawing.Point(748, 91)
+        Me.txtMemberDate.MaxLength = 32999999
+        Me.txtMemberDate.Name = "txtMemberDate"
+        Me.txtMemberDate.Size = New System.Drawing.Size(100, 20)
+        Me.txtMemberDate.TabIndex = 10
+        Me.txtMemberDate.Visible = false
+        '
+        'cmdTop100
+        '
+        Me.cmdTop100.Location = New System.Drawing.Point(15, 49)
+        Me.cmdTop100.Name = "cmdTop100"
+        Me.cmdTop100.Size = New System.Drawing.Size(65, 23)
+        Me.cmdTop100.TabIndex = 11
+        Me.cmdTop100.Text = "TOP 100"
+        Me.cmdTop100.UseVisualStyleBackColor = true
+        '
+        'cmdTop1000
+        '
+        Me.cmdTop1000.Location = New System.Drawing.Point(86, 49)
+        Me.cmdTop1000.Name = "cmdTop1000"
+        Me.cmdTop1000.Size = New System.Drawing.Size(65, 23)
+        Me.cmdTop1000.TabIndex = 12
+        Me.cmdTop1000.Text = "TOP 1000"
+        Me.cmdTop1000.UseVisualStyleBackColor = true
+        '
+        'cmdTop10000
+        '
+        Me.cmdTop10000.Location = New System.Drawing.Point(157, 49)
+        Me.cmdTop10000.Name = "cmdTop10000"
+        Me.cmdTop10000.Size = New System.Drawing.Size(73, 23)
+        Me.cmdTop10000.TabIndex = 13
+        Me.cmdTop10000.Text = "TOP 10000"
+        Me.cmdTop10000.UseVisualStyleBackColor = true
+        '
+        'txtTop
+        '
+        Me.txtTop.Location = New System.Drawing.Point(280, 49)
+        Me.txtTop.MaxLength = 32999999
+        Me.txtTop.Name = "txtTop"
+        Me.txtTop.Size = New System.Drawing.Size(100, 20)
+        Me.txtTop.TabIndex = 14
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = true
+        Me.Label3.Location = New System.Drawing.Point(236, 52)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(38, 13)
+        Me.Label3.TabIndex = 15
+        Me.Label3.Text = "Enter :"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = true
+        Me.Label4.Location = New System.Drawing.Point(386, 52)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(56, 13)
+        Me.Label4.TabIndex = 16
+        Me.Label4.Text = "Negative :"
+        '
+        'cmdNegDB
+        '
+        Me.cmdNegDB.Location = New System.Drawing.Point(501, 49)
+        Me.cmdNegDB.Name = "cmdNegDB"
+        Me.cmdNegDB.Size = New System.Drawing.Size(47, 23)
+        Me.cmdNegDB.TabIndex = 17
+        Me.cmdNegDB.Text = "DB"
+        Me.cmdNegDB.UseVisualStyleBackColor = true
+        '
+        'cmdNegPOS
+        '
+        Me.cmdNegPOS.Location = New System.Drawing.Point(448, 49)
+        Me.cmdNegPOS.Name = "cmdNegPOS"
+        Me.cmdNegPOS.Size = New System.Drawing.Size(47, 23)
+        Me.cmdNegPOS.TabIndex = 18
+        Me.cmdNegPOS.Text = "POS"
+        Me.cmdNegPOS.UseVisualStyleBackColor = true
+        '
+        'ListView1
+        '
+        Me.ListView1.GridLines = true
+        Me.ListView1.Location = New System.Drawing.Point(12, 204)
+        Me.ListView1.Name = "ListView1"
+        Me.ListView1.Size = New System.Drawing.Size(836, 135)
+        Me.ListView1.TabIndex = 19
+        Me.ListView1.UseCompatibleStateImageBehavior = false
+        Me.ListView1.View = System.Windows.Forms.View.Details
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(860, 351)
+        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.ListView1)
+        Me.Controls.Add(Me.cmdNegPOS)
+        Me.Controls.Add(Me.cmdNegDB)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.txtTop)
+        Me.Controls.Add(Me.cmdTop10000)
+        Me.Controls.Add(Me.cmdTop1000)
+        Me.Controls.Add(Me.cmdTop100)
+        Me.Controls.Add(Me.txtMemberDate)
         Me.Controls.Add(Me.ProgBar)
         Me.Controls.Add(Me.txtAccountno)
         Me.Controls.Add(Me.Label2)
@@ -142,7 +254,6 @@ Partial Class Form2
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtFileDirectory)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.DataGridView1)
         Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.Name = "Form2"
         Me.Text = "Points Checker"
@@ -163,4 +274,14 @@ End Sub
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents txtAccountno As System.Windows.Forms.TextBox
     Friend WithEvents ProgBar As System.Windows.Forms.ProgressBar
+    Friend WithEvents txtMemberDate As System.Windows.Forms.TextBox
+    Friend WithEvents cmdTop100 As System.Windows.Forms.Button
+    Friend WithEvents cmdTop1000 As System.Windows.Forms.Button
+    Friend WithEvents cmdTop10000 As System.Windows.Forms.Button
+    Friend WithEvents txtTop As System.Windows.Forms.TextBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents cmdNegDB As System.Windows.Forms.Button
+    Friend WithEvents cmdNegPOS As System.Windows.Forms.Button
+    Friend WithEvents ListView1 As System.Windows.Forms.ListView
 End Class

@@ -1,1 +1,1 @@
-Database=belo_database;Data Source= 192.168.100.172;User Id=root ;Password= belo;Connection Timeout=99999999;UseCompression=True;Convert Zero Datetime=True
+Database=belo_database;Data Source= 192.168.100.172;Port=3306;User Id=root ;Password=belo;UseCompression=True;Convert Zero Datetime=True

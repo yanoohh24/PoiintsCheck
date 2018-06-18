@@ -25,7 +25,7 @@ Module Module1
     public host As String
     public Username As String
     Public Password As String
-    Public frmSMS as new Form1()
+ 
 
     sub main()
         host = "127.0.0.1"

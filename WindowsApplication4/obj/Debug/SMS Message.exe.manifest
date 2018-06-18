@@ -276,14 +276,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SMS Message.exe" size="245720">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SMS Message.exe" size="206808">
       <assemblyIdentity name="SMS Message" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>c2kwiy3+twK9zkKa3N1/8Acwx8+hnt4AL9i5eg4csHo=</dsig:DigestValue>
+        <dsig:DigestValue>zUNQ02/0CtP1Iw3Gs2ch7MZNFkxrK4t3AQbuHCVLIdM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

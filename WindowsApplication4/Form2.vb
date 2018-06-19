@@ -16,11 +16,12 @@ Imports System.Management
 Imports System.Text.RegularExpressions
 
 Public Class Form2
-    Dim strSql ,fname, lname ,fullname , xRec ,xTotal ,Points ,AccMain As String
+    Dim strSql ,fname, lname , xRec ,xTotal ,Points ,AccMain ,xTop As String 
+    Dim Nofname, nolname, nofullname, noRec, noTotal, NoPoints As String
+    Dim fullname = ""
     Dim CountSteps As Integer
     Dim dt As Date
     Dim neg As Boolean = False : Dim negDB as Boolean = False
-    Dim xTop As Double = 0
     Dim connStrLocal As String = "Database=belo_database;Data Source= localhost;Port=3308;User Id=root ;Password='';UseCompression=True;Convert Zero Datetime=True"
     Dim connStrTST As String = "Database=belo_database;Data Source=192.168.100.172;Port=3306;User Id=root ;Password=belo;UseCompression=True;Convert Zero Datetime=True"
     Dim connStrBMG As String = "Database=belo_database;Data Source=192.168.100.250;Port=3306;User Id=root ;Password=webdeveloper;UseCompression=True;Convert Zero Datetime=True"
@@ -71,13 +72,18 @@ Private Sub cmdDisplay_Click( sender As Object,  e As EventArgs) Handles cmdDisp
             'the SELECT statement is important here, 
             'and requires some formatting to pull dates and deal with headers with spaces.
 Dist:       
+            If txtTop.Text = "" then
+                xTop = ""
+            End If
             Dim cmdSelect As New OleDbCommand("SELECT [Rec No],Accountno, Accountmain,Memberdate,Firstname, Lastname,Pointsearned FROM " & fi.Name, conn)
             Dim cmdSelect1 As New OleDbCommand("SELECT TOP " & xTop & " [Rec No],Accountno,Accountmain, Memberdate,Firstname, Lastname,Pointsearned FROM " & fi.Name &" order by Pointsearned desc", conn)
-            
+            'Dim xTopRange As String() = xTop.Split("-")
+            'Dim cmdSelect2 As New OleDbCommand("SELECT TOP " & xTopRange(1).ToString & " [Rec No],Accountno,Accountmain, Memberdate,Firstname, Lastname,Pointsearned FROM " & fi.Name &" order by Pointsearned desc " _
+            '                                   & " EXCEPT SELECT TOP " & xTopRange(0).ToString & " [Rec No],Accountno,Accountmain, Memberdate,Firstname, Lastname,Pointsearned FROM " & fi.Name &" order by Pointsearned desc ",conn)
+
             'Dim readers As OleDbDataReader 
             Dim adapter1 As New OleDbDataAdapter
-
-            If xTop > 1 then
+            If Len(xTop) > 0 then
                 adapter1.SelectCommand = cmdSelect1
             ElseIf neg = True then
                 Dim cmdSelectNeg As New OleDbCommand("SELECT [Rec No],Accountno, Accountmain,Memberdate,Firstname, Lastname,Pointsearned from " & fi.Name & " where Pointsearned < 0 order by pointsearned asc",conn )
@@ -85,7 +91,7 @@ Dist:
             ElseIf negDB =True then
                 Dim cmdSelectNegDB As New OleDbCommand("SELECT [Rec No],Accountno, Accountmain,Memberdate,Firstname, Lastname,Pointsearned from " & fi.Name & " where Pointsearned < 0 order by pointsearned asc",conn )
                 adapter1.SelectCommand = cmdSelectNegDB
-            Elseif Top = 0
+            Elseif xTop = ""
                 adapter1.SelectCommand = cmdSelect
             End If
 
@@ -101,7 +107,7 @@ Dist:
                 DataGridView1.Columns(5).Width = 100
                 DataGridView1.Columns(6).Width = 100
                 ProgBar.Maximum = DataGridview1.RowCount
-                label2.Text = "/" &  DataGridview1.RowCount
+                StatCount.Text = "Count : " & DataGridview1.RowCount - 1 
                 'cmdCheck_Click(Me,EventArgs.Empty)
                 conn.Close()
             Catch ex As Exception
@@ -115,6 +121,7 @@ Dist:
 End Sub
 
 Private Sub cmdCheck_Click( sender As Object,  e As EventArgs) Handles cmdCheck.Click
+        ProgBar.Value = 0
         Dim xCard As String
         Dim xPoints As Integer
         Dim Total As Integer = DataGridView1.RowCount 
@@ -122,6 +129,8 @@ Private Sub cmdCheck_Click( sender As Object,  e As EventArgs) Handles cmdCheck.
         Try 
             For i As Integer = 0 to Total
             ProgBar.Value = ProgBar.Value + 1
+            StatProgress.Text = "Progress : " & i
+            'ProgBar.MarqueeAnimationSpeed = 50
             'Label2.Text = "Process: " & ProgBar.Value & "/" & Total
             
                 If negDB =True then
@@ -154,7 +163,7 @@ End Sub
 Private Sub ReadChecker(ByVal CardNum As string, ByVal TotalPoints As Integer, ByVal steps As Integer ) 
         'Dim sr As New StreamReader(Application.StartupPath & "\SqlConnection.dll")
 recon:
-        Dim query As String = "select * from `Loyalty_Card_Info` where CardNo like '%" & CardNum & "%' or patientid like '%"& CardNum &"%'"
+        Dim query As String = "select * from `Loyalty_Card_Info` where CardNo like '%" & CardNum & "%' or patientid like '%"& CardNum &"%' and card_status not in ('not issued','notissued')"
         'Dim connStrSql As String = sr.ReadLine
         Dim connection As New MySqlConnection(connStrBMG)
         'Dim connection1 As New MySqlConnection(connStrBMG)
@@ -183,16 +192,22 @@ recon:
                             AccMain = AccMain & DataGridView1.Rows(steps).Cells("Accountmain").Value.ToString & "|"
                             dt = DataGridView1.Rows(steps).Cells("Memberdate").Value.ToString 
                             txtMemberDate.Text = txtMemberDate.Text & Convert.ToDateTime(dt) & "|"
-                            fname = fname & DataGridView1.Rows(steps).Cells("Firstname").Value.ToString & "|"
+                                if len(DataGridView1.Rows(steps).Cells("Firstname").Value.ToString) > 0
+                                fname = fname & DataGridView1.Rows(steps).Cells("Firstname").Value.ToString & "|"
+                                Else
+                                fname = fname & "NONE|"
+                                end if
                             lname = lname & DataGridView1.Rows(steps).Cells("Lastname").Value.ToString & "|"
                             xTotal = xTotal & DataGridView1.Rows(steps).Cells("Pointsearned").Value.ToString & "|"
                             Points = Points & reader.Item("total_points").ToString & "|"
                             CountSteps = CountSteps + 1
                         End If
-                    Else
+                    else
                         'Ignore
                     End If
                 End While
+            Else
+                MsgBox("Meow")
             End If
         Catch ex As Exception
             Dim err As String
@@ -217,7 +232,7 @@ Private Sub cmdExcel_Click( sender As Object,  e As EventArgs) Handles cmdExcel.
         Dim xAccountNo As String() = txtAccountno.Text.Split("|") 
         Dim xMemberDate As String() = txtMemberDate.Text.Split("|")
         Dim xFirstname As String() = fname.Split("|") : Dim xLastname As String() = lname.Split("|")
-        Dim xFullname As String() = fullname.Split("|")
+        Dim xFullname As String() = fullname.Split("|") 
         Dim xls As Excel.Application = New Microsoft.Office.Interop.Excel.Application()
         Dim deto As String 
         deto = now().ToString("yyyyMMddHH")
@@ -238,17 +253,17 @@ Private Sub cmdExcel_Click( sender As Object,  e As EventArgs) Handles cmdExcel.
         'ExcelSheet Content
 
         sheet.Cells(1,1) = "UNMATCH RECORDS FOUND AS OF " & Now().ToString("MM/dd/yyyy") : sheet.Cells(1,1).Font.Name = "Calibri"
-        sheet.Cells(1,1).Font.Bold = True : sheet.Cells(1,1).Font.Size = 20
+        sheet.Cells(1,1).Font.Bold = True : sheet.Cells(1,1).Font.Size = 22
         sheet.Cells(1,1).Font.color = Color.Red
         sheet.Range("A1:G1").MergeCells = True
 
-        sheet.Cells(2,1) = "Record No" : sheet.Cells(1,1).FONT.NAME = "Comic Sans"
-        sheet.Cells(2,2) = "Account No."  
-        sheet.Cells(2,3) = "Account Main" 
-        sheet.Cells(2,4) = "Member Date" 
-        sheet.Cells(2,5) = "Fullname"
-        sheet.Cells(2,6) = "Points in POS"
-        sheet.Cells(2,7) = "Points in DB"
+        sheet.Cells(2,1) = "Record No"      : sheet.Cells(2,1).Font.Bold = True
+        sheet.Cells(2,2) = "Card Number"    : sheet.Cells(2,2).Font.Bold = True
+        sheet.Cells(2,3) = "Patient ID"     : sheet.Cells(2,3).Font.Bold = True : sheet.Cells(2,3).Alignment = "Left"
+        sheet.Cells(2,4) = "Member Date"    : sheet.Cells(2,4).Font.Bold = True
+        sheet.Cells(2,5) = "Fullname"       : sheet.Cells(2,5).Font.Bold = True
+        sheet.Cells(2,6) = "Points in POS"  : sheet.Cells(2,6).Font.Bold = True
+        sheet.Cells(2,7) = "Points in DB"   : sheet.Cells(2,7).Font.Bold = True
         '
         '
         For i As Integer = 0 to CountSteps
@@ -257,7 +272,7 @@ Private Sub cmdExcel_Click( sender As Object,  e As EventArgs) Handles cmdExcel.
         sheet.Cells(stepx,2) = xAccountNo(i)
         sheet.Cells(stepx,3) = xAccountMain(i)
         sheet.Cells(stepx,4) = xMemberDate(i)
-        If xFullname(i) <> "" then
+        If i > -1 and Len(fullname) > 1 then
         sheet.Cells(stepx,5) = xFullname(i) 
         Else
         sheet.Cells(stepx,5) = xFirstname(i) & " " & xLastname(i)
@@ -265,8 +280,6 @@ Private Sub cmdExcel_Click( sender As Object,  e As EventArgs) Handles cmdExcel.
         sheet.Cells(stepx,6) = xGtotal(i)
         sheet.Cells(stepx,7) = xPoints(i)
         Next
-
-        
 
 
         xls.Visible = True
@@ -291,36 +304,46 @@ Private Sub releaseObject(ByVal obj As Object)
 End Sub
 
 Private Sub cmdTop100_Click( sender As Object,  e As EventArgs) Handles cmdTop100.Click
-        xTop = 100
+        xTop = "100"
         cmdDisplay_Click(Me,EventArgs.Empty)
 End Sub
 
 Private Sub cmdTop1000_Click( sender As Object,  e As EventArgs) Handles cmdTop1000.Click
-        xTop = 1000
+        xTop = "1000"
         cmdDisplay_Click(Me,EventArgs.Empty)
 End Sub
 
 Private Sub cmdTop10000_Click( sender As Object,  e As EventArgs) Handles cmdTop10000.Click
-        xTop = 10000
+        xTop = "10000"
         cmdDisplay_Click(Me,EventArgs.Empty)
 End Sub
 
     Private Sub txtTop_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtTop.KeyPress
     '97 - 122 = Ascii codes for simple letters
     '65 - 90  = Ascii codes for capital letters
+    '45 = Ascii code for negative/hyphen
     '48 - 57  = Ascii codes for numbers
+    '8 = Ascii code for backspace
 
     If Asc(e.KeyChar) <> 8 Then
-        If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+        'If Asc(e.KeyChar) = 45 then
+        '    If InStr(1,txtTop.Text,"-") then
+        '        e.Handled = True
+        '    Else
+        '        e.Handled = False
+        '    End If
+        'Else
+            If  Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
             e.Handled = True
-        End If
+            End If 
+        'End If
     End If
     End Sub
 
     Private Sub txtTop_KeyUp(sender As Object, e As KeyEventArgs) Handles txtTop.KeyUp
         If e.KeyCode = Keys.Enter then
             If txtTop.Text <> "" then
-                Top = Val(txtTop.Text)
+                xTop = txtTop.Text
                 cmdDisplay_Click(Me,EventArgs.Empty)
             End If
         End If
@@ -336,7 +359,7 @@ reconn:
         negDB = True
         strSql = "SELECT id,cardno,patientid,activation_date,(SELECT CONCAT(`firstname` , ' ' , `lastname`) FROM `patient_info` " _
         & " WHERE `patient_info`.`PatientID` = `loyalty_card_info`.`PatientID`) AS Fullname, total_points " _
-        & " FROM `Loyalty_Card_Info` where total_points < 0 "
+        & " FROM `Loyalty_Card_Info` where total_points < 0 and card_status NOT IN ('not issued','notissued')"
         Dim connection As New MySqlConnection(connStrBMG)
         Dim cmd As New MySqlCommand(strSql,connection)
         Dim adapter As New MySqlDataAdapter(cmd)
@@ -345,6 +368,7 @@ reconn:
             connection.Open
             adapter.Fill(ds,"Loyalty_Card_Info")
             DataGridview1.DataSource = ds.Tables(0)
+            StatCount.Text = "Count : " & DataGridView1.RowCount - 1
             DataGridView1.Columns(0).HeaderText = "Ref No"
             DataGridView1.Columns(1).HeaderText = "Card Number"
             DataGridView1.Columns(2).HeaderText = "Patient ID"
@@ -381,7 +405,7 @@ reconn:
             reader = cmd.ExecuteReader
             If reader.HasRows then
                 While reader.Read
-                    If TotalPoints <> Val(reader("Pointsearned").ToString) then
+                    'If TotalPoints <> Val(reader("Pointsearned").ToString) then
                         If txtAccountno.Text = "" then
                             xRec = DataGridView1.Rows(steps).Cells("id").Value.ToString & "|"
                             txtAccountno.Text = DataGridView1.Rows(steps).Cells("cardno").Value.ToString & "|"
@@ -403,9 +427,9 @@ reconn:
                             Points = Points & DataGridView1.Rows(steps).Cells("total_points").Value.ToString & "|"
                             CountSteps = CountSteps + 1
                         End If
-                    Else
+                    'Else
                         'Ignore
-                    End If
+                    'End If
                 End While
             End If
             Catch ex As Exception
@@ -422,5 +446,9 @@ reconn:
             End Try
             conn.Close
         End If
+End Sub
+
+Private Sub txtTop_TextChanged( sender As Object,  e As EventArgs) Handles txtTop.TextChanged
+
 End Sub
 End Class

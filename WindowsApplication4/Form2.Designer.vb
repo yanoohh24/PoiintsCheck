@@ -45,7 +45,11 @@ Partial Class Form2
         Me.cmdNegDB = New System.Windows.Forms.Button()
         Me.cmdNegPOS = New System.Windows.Forms.Button()
         Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.StatCount = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.StatProgress = New System.Windows.Forms.ToolStripStatusLabel()
         CType(Me.DataGridView1,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.StatusStrip1.SuspendLayout
         Me.SuspendLayout
         '
         'DataGridView1
@@ -229,11 +233,33 @@ Partial Class Form2
         Me.ListView1.UseCompatibleStateImageBehavior = false
         Me.ListView1.View = System.Windows.Forms.View.Details
         '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StatCount, Me.StatProgress})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 345)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(860, 22)
+        Me.StatusStrip1.TabIndex = 20
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'StatCount
+        '
+        Me.StatCount.Name = "StatCount"
+        Me.StatCount.Size = New System.Drawing.Size(46, 17)
+        Me.StatCount.Text = "Count :"
+        '
+        'StatProgress
+        '
+        Me.StatProgress.Name = "StatProgress"
+        Me.StatProgress.Size = New System.Drawing.Size(61, 17)
+        Me.StatProgress.Text = "Progress : "
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(860, 351)
+        Me.ClientSize = New System.Drawing.Size(860, 367)
+        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.ListView1)
         Me.Controls.Add(Me.cmdNegPOS)
@@ -258,6 +284,8 @@ Partial Class Form2
         Me.Name = "Form2"
         Me.Text = "Points Checker"
         CType(Me.DataGridView1,System.ComponentModel.ISupportInitialize).EndInit
+        Me.StatusStrip1.ResumeLayout(false)
+        Me.StatusStrip1.PerformLayout
         Me.ResumeLayout(false)
         Me.PerformLayout
 
@@ -284,4 +312,7 @@ End Sub
     Friend WithEvents cmdNegDB As System.Windows.Forms.Button
     Friend WithEvents cmdNegPOS As System.Windows.Forms.Button
     Friend WithEvents ListView1 As System.Windows.Forms.ListView
+    Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
+    Friend WithEvents StatCount As System.Windows.Forms.ToolStripStatusLabel
+    Friend WithEvents StatProgress As System.Windows.Forms.ToolStripStatusLabel
 End Class

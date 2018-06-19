@@ -2,28 +2,28 @@
 <doc>
 <assembly>
 <name>
-SMSMessage
+PointsChecker
 </name>
 </assembly>
 <members>
-<member name="P:SMS_Message.My.Resources.Resources.ResourceManager">
+<member name="P:Points_Checker.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>
-</member><member name="P:SMS_Message.My.Resources.Resources.Culture">
+</member><member name="P:Points_Checker.My.Resources.Resources.Culture">
 	<summary>
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
 </summary>
-</member><member name="P:SMS_Message.My.Resources.Resources.if_mail_1055030">
+</member><member name="P:Points_Checker.My.Resources.Resources.if_mail_1055030">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:SMS_Message.My.Resources.Resources.Setting">
+</member><member name="P:Points_Checker.My.Resources.Resources.Setting">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="T:SMS_Message.My.Resources.Resources">
+</member><member name="T:Points_Checker.My.Resources.Resources">
 	<summary>
   A strongly-typed resource class, for looking up localized strings, etc.
 </summary>

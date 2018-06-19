@@ -6,9 +6,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{AAE3DF47-4341-4620-A6E1-0D6A68E91932}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>SMS_Message.My.MyApplication</StartupObject>
-    <RootNamespace>SMS_Message</RootNamespace>
-    <AssemblyName>SMS Message</AssemblyName>
+    <StartupObject>Points_Checker.My.MyApplication</StartupObject>
+    <RootNamespace>Points_Checker</RootNamespace>
+    <AssemblyName>Points Checker</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -36,7 +36,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>SMS Message.xml</DocumentationFile>
+    <DocumentationFile>Points Checker.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -46,7 +46,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>SMS Message.xml</DocumentationFile>
+    <DocumentationFile>Points Checker.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -74,7 +74,7 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Mail.ico</ApplicationIcon>
+    <ApplicationIcon>Check Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -221,6 +221,7 @@
     <None Include="Resources\Exit.ico" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Check Icon.ico" />
     <Content Include="Mail.ico" />
   </ItemGroup>
   <ItemGroup>

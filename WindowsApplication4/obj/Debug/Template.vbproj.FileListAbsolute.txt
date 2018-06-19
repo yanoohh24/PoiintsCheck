@@ -29,15 +29,6 @@ C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4
 C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\obj\Debug\SMS Message.pdb
 C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\obj\Debug\SMS_Message.Form1.resources
 C:\Users\User\Documents\Visual Studio 2013\Projects\Template\WindowsApplication4\obj\Debug\SMS_Message.Resources.resources
-C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\SMS Message.exe.config
-C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\obj\Debug\SMS Message.exe
-C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\obj\Debug\SMS Message.xml
-C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\obj\Debug\SMS Message.pdb
-C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\SMS Message.exe.manifest
-C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\SMS Message.application
-C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\SMS Message.exe
-C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\SMS Message.pdb
-C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\SMS Message.xml
 C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\Con_lib.dll
 C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\MaterialSkin.dll
 C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\Microsoft.Expression.Drawing.dll
@@ -55,8 +46,17 @@ C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplica
 C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\zh-Hans\Microsoft.Expression.Drawing.resources.dll
 C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\zh-Hant\Microsoft.Expression.Drawing.resources.dll
 C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\obj\Debug\Template.vbprojResolveAssemblyReference.cache
-C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\obj\Debug\SMS_Message.Form2.resources
-C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\obj\Debug\SMS_Message.Resources.resources
 C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\obj\Debug\Template.vbproj.GenerateResource.Cache
-C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\obj\Debug\SMS Message.exe.manifest
-C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\obj\Debug\SMS Message.application
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\Points Checker.exe.config
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\Points Checker.exe.manifest
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\Points Checker.application
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\Points Checker.exe
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\Points Checker.pdb
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\bin\Debug\Points Checker.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\obj\Debug\Points_Checker.Form2.resources
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\obj\Debug\Points_Checker.Resources.resources
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\obj\Debug\Points Checker.exe.manifest
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\obj\Debug\Points Checker.application
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\obj\Debug\Points Checker.exe
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\obj\Debug\Points Checker.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Point Checker\WindowsApplication4\obj\Debug\Points Checker.pdb

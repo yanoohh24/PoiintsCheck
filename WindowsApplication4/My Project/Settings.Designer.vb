@@ -64,9 +64,9 @@ Namespace My
     Friend Module MySettingsProperty
         
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.SMS_Message.My.MySettings
+        Friend ReadOnly Property Settings() As Global.Points_Checker.My.MySettings
             Get
-                Return Global.SMS_Message.My.MySettings.Default
+                Return Global.Points_Checker.My.MySettings.Default
             End Get
         End Property
     End Module
